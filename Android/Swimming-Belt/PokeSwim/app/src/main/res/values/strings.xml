@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">WaterDigitBuddy</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Water Digit Body</string>
+    <string name="nav_header_subtitle">WDBCompany@esgi.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_signup">Sign up</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_programs">Swimming Pool Programs</string>
+    <string name="action_performances">Performances Details</string>
+
+    <string name="program_title_winter">Winter Body</string>
+    <string name="program_title_spring">Spring Body</string>
+    <string name="program_title_summer">Summer Body</string>
+
+    <string name="program_desc_winter">Finit l\'été et bonjour l\'hiver ! l\'heure de l\'hibernation à sonner sauf pour votre santé physique et mentale, ne lâchez rien !</string>
+    <string name="program_desc_spring">N\'ayez plus peur de vous faire plaisir gustativement à cause de la pression de l\'été, Prenez vous en main avec ce programme spécial printemps !</string>
+    <string name="program_desc_summer">Plage, bikini et cocktails vous attendent ! Prenez votre courage à deux mains, plongez dans l\'eau et la victoire sera à vous !</string>
+
+    <string name="title_card_1">Le Bien-être à travers le Sport</string>
+    <string name="text_card_1">
+        Une bonne qualité de vie passe également par une bonne hygiène de vie.
+        Le Sport apporte un équilibre naturel aussi bien physique que mental.
+        Faire du sport quotidiennement, vous apportera santé et satisfaction personnelle !</string>
+    <string name="text2_card_1">
+        Soyez Courageux et Téméraire, osez chambouiller votre quotidien pour y introduire le sport !
+        La natation est par exemple, un sport équilibré qui détend, muscle et dynamise votre corps.
+        Le changement corporel, après quelques exercices proposés par nos programmes, sera visible et apprécié par vous-même.
+    </string>
+
+    <string name="title_card_2">WaterDigitBuddy</string>
+    <string name="subtitle1_card_2">Fonctionnement et Explications</string>
+
+    <string name="title_card_3">Amélioration, Performance et Progrès</string>
+    <string name="text_card_3">
+        Vous serez suivi grâce à la collecte de vos données via l\'assistant WDB.
+        Vos données et améliorations seront affichées et disponibles depuis votre Espace Personnel ou l\'Espace Performances.\n\nAprès chaque programme effectué, une sauvegarde de vos données (distance parcourue, vitesse, temps passé par exemple)
+        seront mis à jour dans vos espaces et seront présentés sous cette forme:
+    </string>
+
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_splashscreen">SplashscreenActivity</string>
+    <string name="name">Prénom Nom</string>
+    <string name="speed_performance">Vitesse : {speed} m/s</string>
+    <string name="distance_performance">Distance : {distance} mètres</string>
+    <string name="title_liste_performance">Listes des performances</string>
+    <string name="date_performance">Date : {date}</string>
+    <string name="duration_performance">Durée {duration}</string>
+</resources>

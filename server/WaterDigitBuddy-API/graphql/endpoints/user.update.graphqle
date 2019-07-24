@@ -1,0 +1,10 @@
+{
+    user {
+        firstname
+        lastname
+        email
+        password
+        age
+        gender
+    }
+}

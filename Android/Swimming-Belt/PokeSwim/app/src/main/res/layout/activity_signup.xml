@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+
+
+    <ImageView
+        android:layout_width="700dp"
+        android:layout_height="500dp"
+        android:scaleType="matrix"
+        android:src="@drawable/circle"
+        android:layout_gravity="bottom"
+        android:paddingTop="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:fontFamily="serif-monospace"
+        android:textColor="#212121"
+        android:textSize="30dp"
+        android:text="Inscription"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:fontFamily="serif-monospace"
+        android:textColor="#616161"
+        android:textSize="22dp"
+        android:text="à"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="250dp"/>
+
+    <TextView
+        android:text="WaterDigitBuddy"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:fontFamily="serif-monospace"
+        android:textColor="#039be5"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"/>
+
+    <ImageView android:src="@drawable/logo"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="left"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <!--  lastname Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="145dp">
+
+            <EditText android:id="@+id/input_lastname"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:inputType="textCapWords"
+                android:hint="Nom"
+                android:textColor="@color/blueWaves"
+                android:layout_gravity="center_horizontal"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!--  firstname Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText android:id="@+id/input_firstname"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:inputType="textCapWords"
+                android:hint="Prénom"
+                android:textColor="@color/blueWaves"
+                android:layout_gravity="center_horizontal"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Email Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText android:id="@+id/input_email"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+                android:textColor="@color/blueWaves"
+                android:layout_gravity="center_horizontal"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText android:id="@+id/input_password"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:textColor="@color/blueWaves"
+                android:layout_gravity="center_horizontal"
+                android:importantForAutofill= "yes"
+                android:autofillHints= "Mot de passe"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Age : "
+                android:layout_below="@+id/seekBar"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/input_age"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textColor="@color/blueWaves"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekBarAge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="13dp"
+            android:min="8"
+            android:max="90"
+            android:progress="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Genre : "
+                android:layout_below="@+id/input_gender"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/input_gender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="✏"
+                android:textColor="@color/blueWaves"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="15dp"
+                android:onClick="onClickGender"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <!--  Device ESP32 Id Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp">
+
+            <EditText android:id="@+id/input_deviceid"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:inputType="textCapWords"
+                android:hint="N° Device"
+                android:textColor="@color/blueWaves"
+                android:layout_gravity="center_horizontal"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Signup Button -->
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="30dp"
+            android:padding="12dp"
+            android:text="Créer un compte"
+            android:layout_gravity="center_horizontal"
+            style="@style/AppTheme.RoundedCornerMaterialButton"/>
+
+        <TextView
+            android:id="@+id/link_login"
+            android:onClick="register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Déjà membre? S'enregistrer"
+            android:gravity="center"
+            android:textSize="16dip"
+            android:clickable="true"
+            android:textColor="#fff"
+            />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wave"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+</FrameLayout>

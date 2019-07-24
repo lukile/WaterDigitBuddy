@@ -1,0 +1,13 @@
+{
+    performance {
+        datePerformance
+        speed
+        lengthType
+        startTime
+        endTime
+        distance
+        programType {
+          _id
+        }
+    }
+}

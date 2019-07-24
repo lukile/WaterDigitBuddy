@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!--<group android:checkableBehavior="single">-->
+    <item android:title="WaterDigitBuddy Trainings">
+        <menu>
+            <item
+                android:id="@+id/programs"
+                android:icon="@drawable/swim"
+                android:title="Entraînements Programmes" />
+            <item
+                android:id="@+id/performances"
+                android:icon="@drawable/speedometer2"
+                android:title="Performances" />
+        </menu>
+    </item>
+    <!--</group>-->
+
+    <item android:title="Paramètres Personnel">
+        <menu>
+            <item
+                android:id="@+id/profile"
+                android:icon="@drawable/account"
+                android:title="Profil" />
+            <item
+                android:id="@+id/dashboard"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Dashboard" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/lock"
+                android:title="Déconnexion" />
+        </menu>
+    </item>
+
+</menu>

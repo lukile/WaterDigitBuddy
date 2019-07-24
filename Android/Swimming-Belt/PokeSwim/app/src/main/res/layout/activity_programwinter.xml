@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img_obj"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/obj"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/title_obj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OBJECTIF"
+        android:textSize="20sp"
+        android:paddingRight="30dp"
+        android:paddingLeft="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/img_obj"
+        app:layout_constraintRight_toLeftOf="@+id/title_obj2"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/title_obj2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Winter Body"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:paddingRight="60dp"
+        android:paddingLeft="30dp"
+        app:layout_constraintRight_toLeftOf="@+id/title_obj"
+        app:layout_constraintTop_toBottomOf="@+id/img_obj" />
+
+    <LinearLayout
+        android:id="@+id/tab_stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/title_obj2"
+        android:background="#bbdefb"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vitesse"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/text_speed_swim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X m/s"
+                android:textSize="18dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/text_distance_swim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200 m"
+                android:textSize="18dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Longueur"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/text_length_swim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25 m"
+                android:textSize="18dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_stats2"
+        android:background="#e3f2fd"
+        app:layout_constraintTop_toBottomOf="@+id/tab_stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Durée"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/text_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1h à 1,5h"
+                android:textSize="18dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pause"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/text_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50 min"
+                android:textSize="18dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/AppTheme.RoundedCornerMaterialButton2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="56dp"
+        android:text="GO"
+        app:layout_constraintTop_toBottomOf="@+id/tab_stats2"
+        tools:layout_editor_absoluteX="161dp" />
+
+</android.support.constraint.ConstraintLayout>

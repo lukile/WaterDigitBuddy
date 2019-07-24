@@ -1,0 +1,33 @@
+type Query {
+    program: SwimmingProgram!
+    performance: UserPerformance!
+    user: User!
+}
+
+type SwimmingProgram {
+    _id: String!
+    name: String!
+    description: String!
+}
+
+type UserPerformance {
+    _id: String!
+    datePerformance: String!
+    speed: String!
+    lengthType: String
+    startTime: String!
+    endTime: String!
+    distance: Float!
+    programType: SwimmingProgram
+}
+
+type User {
+    _id: String!
+    firstname: String!
+    lastname: String!
+    email: String!
+    password: String!
+    age: Float!
+    gender: String!
+    deviceid: String!
+}
