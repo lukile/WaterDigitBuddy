@@ -5,17 +5,17 @@
   "main": "index.js",
   "dependencies": {
     "axios": "^0.18.0",
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.20.1",
     "cors": "^2.8.4",
     "dotenv": "^8.0.0",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "graphql": "^14.0.2",
     "jsonwebtoken": "^8.3.0",
     "mongoose": "^5.3.4",
     "nodemon": "^1.18.4"
   },
   "devDependencies": {
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.2"
   },
   "scripts": {
     "start": "nodemon --watch . -L index.js dev",
